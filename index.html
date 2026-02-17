@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Biodata - Kint John Pador</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f6f9;
+    color:#333;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+}
+
+/* HEADER */
+.header{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:white;
+    padding:40px 20px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.profile-image img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:4px solid white;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+.name{
+    font-size:2rem;
+    font-weight:bold;
+}
+
+.tagline{
+    font-size:1.1rem;
+    opacity:0.9;
+}
+
+/* SECTIONS */
+.section{
+    margin-top:40px;
+}
+
+.section-title{
+    font-size:1.5rem;
+    margin-bottom:20px;
+    border-left:5px solid #2a5298;
+    padding-left:10px;
+}
+
+/* INFO GRID */
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+}
+
+.info-card{
+    background:white;
+    padding:15px;
+    border-radius:8px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.info-label{
+    font-weight:bold;
+    font-size:0.9rem;
+    color:#666;
+}
+
+.info-value{
+    margin-top:5px;
+}
+
+/* TIMELINE */
+.timeline-item{
+    background:white;
+    padding:15px;
+    border-radius:8px;
+    margin-bottom:15px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.timeline-year{
+    font-weight:bold;
+    color:#2a5298;
+}
+
+/* SKILLS */
+.skill-item{
+    margin-bottom:15px;
+}
+
+.skill-bar{
+    height:8px;
+    background:#ddd;
+    border-radius:5px;
+    overflow:hidden;
+    margin-top:5px;
+}
+
+.skill-progress{
+    height:100%;
+    background:#2a5298;
+}
+
+/* LANGUAGES */
+.languages-grid{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.language-card{
+    background:white;
+    padding:15px;
+    border-radius:8px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* INTERESTS */
+.interests-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.interest-tag{
+    background:#2a5298;
+    color:white;
+    padding:8px 12px;
+    border-radius:20px;
+    font-size:0.9rem;
+}
+
+/* FOOTER */
+.footer{
+    margin-top:50px;
+    padding:30px 20px;
+    background:#1e3c72;
+    color:white;
+    border-radius:10px;
+    text-align:center;
+}
+
+.contact-item{
+    margin:10px 0;
+}
+
+.contact-link{
+    color:white;
+    text-decoration:none;
+}
+
+.contact-link:hover{
+    text-decoration:underline;
+}
+
+.footer-note{
+    margin-top:20px;
+    font-size:0.8rem;
+    opacity:0.8;
+}
+
+@media(max-width:600px){
+    .name{
+        font-size:1.5rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <div class="profile-image">
+            <img src="https://via.placeholder.com/150" alt="Profile Photo">
+        </div>
+        <h1 class="name">Kint John Pador</h1>
+        <p class="tagline">BS Information Technology Student</p>
+    </div>
+
+    <!-- PERSONAL INFO -->
+    <section class="section">
+        <h2 class="section-title">Personal Information</h2>
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="info-label">Full Name</div>
+                <div class="info-value">Kint John Suquib Pador</div>
+            </div>
+            <div class="info-card">
+                <div class="info-label">Date of Birth</div>
+                <div class="info-value">December 14, 2003</div>
+            </div>
+            <div class="info-card">
+                <div class="info-label">Nationality</div>
+                <div class="info-value">Filipino</div>
+            </div>
+            <div class="info-card">
+                <div class="info-label">Address</div>
+                <div class="info-value">Igpit, Opol, Misamis Oriental</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline-item">
+            <span class="timeline-year">2022 - Present</span>
+            <h3>BS Information Technology</h3>
+            <p>Major in IoT</p>
+        </div>
+        <div class="timeline-item">
+            <span class="timeline-year">2017 - 2022</span>
+            <h3>High School Diploma</h3>
+            <p>Completed with distinction in EIM</p>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section">
+        <h2 class="section-title">Professional Skills</h2>
+
+        <div class="skill-item">
+            HTML
+            <div class="skill-bar">
+                <div class="skill-progress" style="width:70%"></div>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            CSS
+            <div class="skill-bar">
+                <div class="skill-progress" style="width:65%"></div>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            JavaScript
+            <div class="skill-bar">
+                <div class="skill-progress" style="width:40%"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- LANGUAGES -->
+    <section class="section">
+        <h2 class="section-title">Languages</h2>
+        <div class="languages-grid">
+            <div class="language-card">
+                Cebuano – Native
+            </div>
+            <div class="language-card">
+                English – Intermediate
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERESTS -->
+    <section class="section">
+        <h2 class="section-title">Interests</h2>
+        <div class="interests-container">
+            <div class="interest-tag">👨‍💻 Coding</div>
+            <div class="interest-tag">🏍 Riding</div>
+            <div class="interest-tag">🎮 Gaming</div>
+            <div class="interest-tag">🎵 Music</div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <h3>Get in Touch</h3>
+        <div class="contact-item">📧 kintjohn12@gmail.com</div>
+        <div class="contact-item">📱 +63 948 4762 017</div>
+        <div class="footer-note">
+            © 2026 Kint John Pador | All Rights Reserved
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
