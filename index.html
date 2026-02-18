@@ -164,45 +164,6 @@ body{
     background: linear-gradient(90deg,#1e3c72,#2a5298);
 }
 
-/* LANGUAGES */
-.languages-grid{
-    display:flex;
-    gap:20px;
-    flex-wrap:wrap;
-}
-
-.language-card{
-    background:white;
-    padding:20px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.08);
-    transition:0.3s ease;
-}
-
-.language-card:hover{
-    transform:scale(1.05);
-}
-
-/* INTERESTS */
-.interests-container{
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
-}
-
-.interest-tag{
-    background:linear-gradient(135deg,#1e3c72,#2a5298);
-    color:white;
-    padding:10px 15px;
-    border-radius:30px;
-    font-size:0.9rem;
-    transition:0.3s ease;
-}
-
-.interest-tag:hover{
-    transform:translateY(-3px);
-}
-
 /* FOOTER */
 .footer{
     margin-top:60px;
@@ -240,12 +201,21 @@ body{
 
     <div class="header">
         <div class="profile-image">
-            <!-- YOUR REAL PROFILE IMAGE -->
             <img src="images/prof.jpg" alt="Kint John Pador Profile Photo">
         </div>
         <h1 class="name">Kint John Pador</h1>
         <p class="tagline">BS Information Technology Student</p>
     </div>
+
+    <!-- About Me -->
+    <section class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="info-card">
+            <div class="info-value">
+                I am an aspiring Information Technology student who is passionate about learning new technologies and continuously improving my skills. I am eager to grow both personally and professionally while building a strong foundation in the IT field.
+            </div>
+        </div>
+    </section>
 
     <!-- Personal Information -->
     <section class="section">
@@ -269,17 +239,6 @@ body{
             </div>
         </div>
     </section>
-
-    <!-- About Me -->
-<section class="section">
-    <h2 class="section-title">About Me</h2>
-    <div class="info-card">
-        <div class="info-value">
-            I am an aspiring Information Technology student who is passionate about learning new technologies and continuously improving my skills. I am eager to grow both personally and professionally while building a strong foundation in the IT field.
-        </div>
-    </div>
-</section>
-
 
     <!-- Education -->
     <section class="section">
@@ -337,5 +296,3 @@ body{
 
 </body>
 </html>
-
-
